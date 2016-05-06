@@ -10,12 +10,12 @@ public class SnakeCamelTest {
 	@Test
 	public void testSnaketoCamelcase() {
 		String expected = "AbcDefGhi";
-		String actual = snakecamel.capitalize("abc_def_ghi");
+		String actual = snakecamel.snakeToCamelcase("abc_def_ghi");
 		assertThat(actual,is(expected));
 	}
 	public void testCamelToSnakecase() {
 		String expected = "abc_def_ghi";
-		String actual = snakecamel.capitalize("AbcDefGhi");
+		String actual = snakecamel.camelToSnakecase("AbcDefGhi");
 		assertThat(actual,is(expected));
 	}
 
